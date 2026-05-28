@@ -291,6 +291,7 @@ body > section:empty {
 .footer-social-link {
   display: flex;
   align-items: center;
+  font-family: 'Poppins', sans-serif;
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;

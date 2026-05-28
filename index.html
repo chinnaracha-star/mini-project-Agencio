@@ -6,6 +6,15 @@
     <title>Agencio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- =========================
@@ -179,8 +188,146 @@
     <section></section>
     <!-- Dev3 -->
     <section></section>
+
     <!-- Dev4 -->
-    <section></section>
+
+    <!-- price-plan section -->
+    <section class="flex flex-col items-center justify-center w-full py-16 px-4"> 
+      <header class="text-center mb-14 lg:space-y-6">
+        <p class="text-md lg:text-[24px] text-[#8480AE] font-[400]">Price Plan</p>
+        <p class="text-2xl lg:text-[48px] text-[#0B0757] font-[500]">No Extra Charges!</p>
+        <p class="text-2xl lg:text-[48px] text-[#0B0757] font-[500]">Choose Your Plan.</p>
+      </header>
+
+      <table class="w-full lg:w-[70vw] border table-fixed" role="table">
+        <thead>
+          <tr role="row">
+            <th scope="col" class="w-4/12 lg:w-1/4">
+            </th>
+            
+            <th scope="col" class="w-1/4 border-l text-center px-2 py-3 lg:py-10">
+              <span class="text-sm lg:text-[36px] font-[500] text-[#FDC46E]">$2000</span>
+              <span class="block text-xs lg:text-[20px] mt-1 font-[400] text-[#8480AE]">Regular</span>
+            </th>
+            <th scope="col" class="w-1/4 border-l text-center px-2">
+              <span class="text-sm lg:text-[36px] font-[500] text-[#00B894]">$3000</span>
+              <span class="block text-xs lg:text-[20px] mt-1 font-[400] text-[#8480AE]">Premium</span>
+            </th>
+            <th scope="col" class="w-1/4 border-l text-center px-2">
+              <span class="text-sm lg:text-[36px] font-[500] text-[#1374F6]">$5000</span>
+              <span class="block text-xs lg:text-[20px] mt-1 font-[400] text-[#8480AE]">Corporate</span>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          <tr role="row" class="border-t">
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Full Access</th>
+
+            <td class="border-l border-gray-200 text-center" aria-label="Not included in Regular">
+              <span class="text-lg text-[#8480AE] font-bold">✕</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Not included in Premium">
+              <span class="text-[#8480AE] text-lg font-bold">✕</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
+              <span class="text-[#1374F6] text-lg font-bold">✓</span>
+            </td>
+          </tr>
+
+          <tr role="row" class="border-t">
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Multiple User</th>
+
+            <td class="border-l border-gray-200 text-center" aria-label="Not included in Regular">
+              <span class="text-lg text-[#8480AE] font-bold">✕</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Not included in Premium">
+              <span class="text-[#8480AE] text-lg font-bold">✕</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
+              <span class="text-[#1374F6] text-lg font-bold">✓</span>
+            </td>
+          </tr>
+
+          <tr role="row" class="border-t">
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Refund</th>
+
+            <td class="border-l border-gray-200 text-center" aria-label="Not included in Regular">
+              <span class="text-lg text-[#8480AE] font-bold">✕</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
+              <span class="text-[#1374F6] text-lg font-bold">✓</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
+              <span class="text-[#1374F6] text-lg font-bold">✓</span>
+            </td>
+          </tr>
+
+          <tr role="row" class="border-t">
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">24/7 Support</th>
+
+            <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
+              <span class="text-[#1374F6] text-lg font-bold">✓</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
+              <span class="text-[#1374F6] text-lg font-bold">✓</span>
+            </td>
+            <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
+              <span class="text-[#1374F6] text-lg font-bold">✓</span>
+            </td>
+          </tr>
+
+          <!-- CTA row -->
+          <tr role="row" class="border-t">
+            <td></td>
+
+            <td class="border-l text-center px-2 py-6">
+              <button type="button" class="bg-[#FDC46E] hover:bg-amber-500 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
+                Choose Plan
+              </button>
+              <p class="text-[10px] lg:text-[14px] text-[#8480AE] mt-4">Get your 30 days free trial</p>
+            </td>
+
+            <td class="border-l text-center px-2 py-6">
+              <button type="button" class="bg-[#00B894] hover:bg-emerald-600 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
+                Choose Plan
+              </button>
+              <p class="text-[10px] lg:text-[14px] text-[#8480AE] mt-4">Get your 30 days free trial</p>
+            </td>
+
+            <td class="border-l text-center px-2 py-6">
+              <button type="button" class="bg-[#1374F6] hover:bg-sky-500 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
+                Choose Plan
+              </button>
+              <p class="text-[10px] lg:text-[14px] text-[#8480AE] mt-4">Get your 30 days free trial</p>
+            </td>
+          </tr>
+      </table>
+    </section>
+
+
+    <!-- quote section -->
+    <section class="flex items-center justify-center gap-30 w-[70vw] h-[80vh]"> 
+      <div class="ceo-image w-[400px] h-[500px]">
+        <img src="./public/image/CEO-pic.png" alt="CEO of DIANO" class="absolute">
+        <img src="./public/image/thump-up.png" alt="thump-up" class="size-[76px] relative top-71 right-[38px]">
+      </div>
+
+      <article class="w-[602px] flex flex-col gap-10">
+        <img src="./public/image/quote.png" alt="quote-sign" class="size-[59px]">
+
+        <div class="text-[24px] text-[#8480AE] italic">
+          <p>It’s awesome service. Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let behold over he whose of sea moved called.</p>
+        </div>
+
+        <div>
+          <p class="text-[24px] text-[#FDC46E] font-[700]">Jack Smith</p>
+          <p class="text-[16px] text-[#8480AE]">CEO of DIANO</p>
+        </div>
+      </article>
+    </section>
+
     <!-- Dev5 -->
     <section id="newsletter">
       <div class="newsletter-card">

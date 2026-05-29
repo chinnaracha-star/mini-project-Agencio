@@ -15,118 +15,187 @@
 
 <body>
 
-  <!-- =========================
+<!-- =========================
   Dev1 : Hero Section
   Owner: Dev1
   Rule: Dev1 แก้เฉพาะใน block นี้เท่านั้น เพื่อป้องกัน Git conflict
 ========================= -->
-  <section id="dev1-hero" class="relative w-full overflow-hidden bg-[#F3F7FC] px-6 pt-7 pb-20 md:px-10 lg:px-0">
-    <!-- Header / Navbar -->
-    <header class="relative z-50 mx-auto flex max-w-[1120px] items-center justify-between">
-      <!-- Logo -->
-      <a href="#" class="flex items-center gap-4">
-        <div class="relative h-[39px] w-[52px]">
-          <img src="./public/image/Polygon 1.png" alt="Blue logo shape"
-            class="absolute left-0 top-0 h-full w-full object-contain" />
-          <img src="./public/image/Polygon 2.png" alt="White logo shape"
-            class="absolute left-[16px] top-[3px] h-[33px] w-[33px] object-contain" />
-        </div>
-
-        <span class="text-[32px] font-bold leading-none text-[#0B0B45]">
-          Agencio
-        </span>
-      </a>
-
-      <!-- Desktop Menu -->
-      <nav class="ml-70 hidden items-center gap-10 text-sm text-[#0B0B45] md:flex">
-        <a href="#" class="hover:text-[#2176FF]">Home</a>
-        <a href="#" class="hover:text-[#2176FF]">Category</a>
-        <a href="#" class="hover:text-[#2176FF]">Service</a>
-        <a href="#" class="hover:text-[#2176FF]">Blog</a>
-        <a href="#" class="hover:text-[#2176FF]">Contact</a>
-      </nav>
-
-      <!-- Button -->
-      <a href="#"
-        class="hidden rounded bg-[#FFD86E] px-8 py-4 text-sm text-[#0B0B45] transition hover:bg-[#ffc83d] md:block">
-        Create Account
-      </a>
-
-      <!-- Mobile Menu Icon -->
-      <button type="button" class="flex h-10 w-10 items-center justify-center rounded-md bg-white shadow-sm md:hidden"
-        aria-label="Open menu">
-        <span class="text-2xl text-[#0B0B45]">☰</span>
-      </button>
-    </header>
-
-    <!-- Hero Content -->
-    <div class="relative z-10 mx-auto mt-16 grid max-w-[1120px] items-center gap-12 md:mt-20 lg:grid-cols-[1fr_1.08fr]">
-      <!-- Left Content -->
-      <div class="text-center lg:text-left">
-        <div class="mb-5 flex items-center justify-center gap-4 lg:justify-start">
-          <p class="text-sm uppercase tracking-[3px] text-[#2176FF]">
-            Creative Agency
-          </p>
-          <span class="mt-[10px] h-[2px] w-8 bg-[#2176FF]"></span>
-        </div>
-
-        <h1
-          class="mx-auto max-w-[700px] text-[42px] font-bold leading-[1.25] tracking-[2px] text-[#0B0B45] sm:text-[52px] lg:mx-0">
-          We are here to give the best service
-        </h1>
-
-        <p class="mx-auto mt-7 max-w-[560px] text-base leading-8 text-[#7A7E9A] lg:mx-0">
-          It's crafted with the latest trend of design &amp; coded with all
-          modern approaches. It's a robust &amp; multi-dimensional usable
-          template.
-        </p>
-
-        <div class="mt-9 flex flex-col items-center justify-center gap-5 sm:flex-row lg:justify-start">
-          <a href="#"
-            class="rounded bg-[#2176FF] px-10 py-4 text-sm font-semibold text-white transition hover:bg-[#005fe8]">
-            Get Started
-          </a>
-
-          <a href="#" class="flex items-center gap-3 text-sm font-medium text-[#0B0B45]">
-            <img src="./public/image/Group 53.png" alt="Play icon" class="h-6 w-6 object-contain" />
-            Watch Video
-          </a>
-        </div>
+<section
+  id="dev1-hero"
+  class="dev1-hero relative w-full overflow-hidden bg-[#F3F7FC] px-4 pt-4 pb-20 font-['Rubik'] sm:px-6 md:px-10 lg:px-0 lg:pt-7"
+>
+  <!-- Header / Navbar -->
+  <header
+    class="relative z-50 mx-auto flex max-w-[1120px] items-center justify-between"
+  >
+    <!-- Logo -->
+    <a href="#" class="flex items-center gap-2 lg:gap-4">
+      <div class="relative h-[30px] w-[30px] lg:h-[39px] lg:w-[52px]">
+        <img
+          src="./public/image/Polygon 1.png"
+          alt="Blue logo shape"
+          class="absolute left-0 top-0 h-full w-full object-contain"
+        />
+        <img
+          src="./public/image/Polygon 2.png"
+          alt="White logo shape"
+          class="absolute left-[10px] top-[2px] h-[26px] w-[26px] object-contain lg:left-[16px] lg:top-[3px] lg:h-[33px] lg:w-[33px]"
+        />
       </div>
 
-      <!-- Right Image Area -->
-      <div class="relative mx-auto h-[632px] w-full max-w-[609px]">
-        <!-- Blue Background -->
-        <div
-          class="absolute right-[40px] top-[0px] z-0 h-[577px] w-[369px] overflow-hidden rounded-tr-[45px] rounded-br-[10px] ]">
-          <!-- White slant bottom -->
-          <div class="absolute bottom-0 left-0 h-[140px] w-full bg-white"
-            style="clip-path: polygon(0 60%, 100% 25%, 100% 100%, 0 100%)"></div>
-        </div>
+      <span class="text-[22px] font-bold leading-none text-[#0B0B45] lg:text-[32px]">
+        Agencio
+      </span>
+    </a>
 
-        <!-- Main Person Image -->
-        <img src="./public/image/Mask Group.png" alt="Agency man"
-          class="absolute bottom-[82px] right-[98px] z-20 w-[360px] object-contain" />
+    <!-- Desktop Menu -->
+    <nav class="hidden items-center gap-10 text-sm text-[#0B0B45] md:flex lg:ml-24">
+      <a href="#" class="hover:text-[#2176FF]">Home</a>
+      <a href="#" class="hover:text-[#2176FF]">Category</a>
+      <a href="#" class="hover:text-[#2176FF]">Service</a>
+      <a href="#" class="hover:text-[#2176FF]">Blog</a>
+      <a href="#" class="hover:text-[#2176FF]">Contact</a>
+    </nav>
 
-        <!-- Realtime Users Card -->
-        <img src="./public/image/REAL TIME USER.png" alt="Realtime user graph"
-          class="absolute right-[20px] top-[70px] z-30 w-[149px] object-contain" />
+    <!-- Right Action -->
+<div class="flex items-center gap-5">
+  <!-- Desktop Button -->
+  <a
+    href="#"
+    class="hidden rounded bg-[#FFD86E] px-8 py-4 text-sm text-[#0B0B45] transition hover:bg-[#ffc83d] md:block"
+  >
+    Create Account
+  </a>
 
-        <!-- Users Card -->
-        <img src="./public/image/Group 7.png" alt="Users card"
-          class="absolute bottom-[50px] left-[0px] z-30 w-[180px] object-contain" />
+  <!-- Mobile Menu Icon -->
+<button
+  type="button"
+  class="flex h-[30px] w-[30px] items-center justify-center rounded bg-white shadow-sm md:hidden"
+  aria-label="Open menu"
+>
+  <span class="text-[22px] leading-none text-[#0B0B45]">☰</span>
+</button>
 
-        <!-- Chat Icon -->
-        <img src="./public/image/Group 32.png" alt="Chat icon"
-          class="absolute bottom-[250px] left-[110px] z-40 h-[80px] w-[80px] object-contain" />
+  <!-- Mobile Menu Icon -->
+  <button
+    type="button"
+    class="flex h-[30px] w-[30px] items-center justify-center rounded bg-white shadow-sm md:hidden"
+    aria-label="Open menu"
+  >
+    <span class="text-[22px] leading-none text-[#0B0B45]">☰</span>
+  </button>
+</div>
+  </header>
+
+  <!-- Hero Content -->
+  <div
+    class="dev1-hero-content relative z-10 mx-auto mt-[54px] grid max-w-[1120px] items-center gap-0 md:mt-20 lg:grid-cols-[1fr_1.08fr] lg:gap-12"
+  >
+    <!-- Left Content -->
+    <div class="dev1-left-content text-left lg:text-left">
+      <div class="dev1-eyebrow mb-[14px] flex items-center justify-start gap-3 lg:mb-5 lg:gap-4">
+        <p class="text-[13px] uppercase leading-none tracking-[2.8px] text-[#2176FF] lg:text-sm lg:tracking-[3px]">
+          Creative Agency
+        </p>
+        <span class="mt-[5px] h-[2px] w-8 bg-[#2176FF] lg:mt-[10px]"></span>
+      </div>
+
+      <h1
+        class="dev1-title max-w-[327px] text-[31px] font-bold leading-[1.28] tracking-[1.2px] text-[#0B0B45] sm:max-w-[520px] sm:text-[42px] lg:max-w-[700px] lg:text-[52px] lg:leading-[1.25] lg:tracking-[2px]"
+      >
+        We are here to give the best service
+      </h1>
+
+      <p
+        class="dev1-desc mt-[22px] max-w-[327px] text-[14px] leading-[1.85] text-[#7A7E9A] sm:max-w-[520px] lg:mt-7 lg:max-w-[560px] lg:text-base lg:leading-8"
+      >
+        It's crafted with the latest trend of design &amp; coded with all
+        modern approaches. It's a robust &amp; multi-dimensional usable
+        template.
+      </p>
+
+      <div
+       class="dev1-actions mt-[22px] flex flex-row items-center justify-center gap-[50px] translate-x-[-40px] lg:mt-9 lg:translate-x-0 lg:justify-start lg:gap-5"
+      >
+        <a
+          href="#"
+          class="dev1-primary-btn flex h-[49px] w-[130px] items-center justify-center rounded-[3px] bg-[#2176FF] p-0 text-sm font-semibold text-white transition hover:bg-[#005fe8] lg:h-auto lg:w-auto lg:px-10 lg:py-4"
+        >
+          Get Started
+        </a>
+
+        <a
+          href="#"
+          class="dev1-video-btn flex items-center gap-2 whitespace-nowrap text-sm font-medium text-[#0B0B45] lg:gap-3"
+        >
+          <img
+            src="./public/image/Group 53.png"
+            alt="Play icon"
+            class="dev1-play-icon h-[22px] w-[22px] object-contain lg:h-6 lg:w-6"
+          />
+          Watch Video
+        </a>
       </div>
     </div>
 
-    <!-- Bottom White Skew Shape -->
-    <div class="absolute bottom-[-1px] left-0 z-0 h-24 w-full bg-white"
-      style="clip-path: polygon(0 30%, 100% 100%, 100% 100%, 0% 100%)"></div>
-  </section>
-  <!-- =========================
+    <!-- Right Image Area -->
+<div
+  class="dev1-visual relative mx-auto mt-[52px] h-[390px] w-[calc(100vw-32px)] max-w-[360px]
+         lg:mt-0 lg:h-[632px] lg:w-full lg:max-w-[609px]"
+>
+  <!-- Blue Background -->
+  <div
+    class="absolute left-1/2 top-0 z-0 h-[340px] w-[265px] -translate-x-1/2 overflow-hidden rounded-br-[8px] rounded-tr-[34px] bg-[#FFFFFF]
+           lg:left-auto lg:right-[40px] lg:h-[577px] lg:w-[369px] lg:translate-x-0 lg:rounded-tr-[45px]"
+  >
+    <!-- White slant bottom -->
+    <div
+      class="absolute bottom-0 left-0 h-[78px] w-full bg-white lg:h-[140px]"
+      style="clip-path: polygon(0 60%, 100% 25%, 100% 100%, 0 100%)"
+    ></div>
+  </div>
+
+  <!-- Main Person Image -->
+  <img
+    src="./public/image/Mask Group.png"
+    alt="Agency man"
+    class="dev1-person absolute bottom-[56px] left-1/2 z-20 w-[270px] -translate-x-[58%] object-contain
+           lg:left-auto lg:bottom-[82px] lg:right-[98px] lg:w-[360px] lg:translate-x-0"
+  />
+
+  <!-- Realtime Users Card -->
+  <img
+    src="./public/image/REAL TIME USER.png"
+    alt="Realtime user graph"
+    class="dev1-realtime absolute right-[8px] top-[-20px] z-30 w-[112px] object-contain
+           lg:right-[20px] lg:top-[70px] lg:w-[149px]"
+  />
+
+  <!-- Users Card -->
+  <img
+    src="./public/image/Group 7.png"
+    alt="Users card"
+    class="dev1-users absolute bottom-[54px] left-[-35px] z-30 w-[125px] object-contain
+           lg:bottom-[50px] lg:left-0 lg:w-[180px]"
+  />
+
+  <!-- Chat Icon -->
+  <img
+    src="./public/image/Group 32.png"
+    alt="Chat icon"
+    class="dev1-chat absolute bottom-[184px] left-[35px] z-40 h-[58px] w-[58px] object-contain
+           lg:bottom-[250px] lg:left-[110px] lg:h-[80px] lg:w-[80px]"
+  />
+</div>
+  </div>
+
+  <!-- Bottom White Skew Shape -->
+  <div
+    class="absolute bottom-[-1px] left-0 z-0 h-[70px] w-full bg-white lg:h-24"
+    style="clip-path: polygon(0 30%, 100% 100%, 100% 100%, 0% 100%)"
+  ></div>
+</section>
+<!-- =========================
   End Dev1 : Hero Section
 ========================= -->
 

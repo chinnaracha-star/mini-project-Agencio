@@ -123,7 +123,9 @@ body > section:empty {
   border-radius: 9999px;
   background-color: #407bff;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.15s;
+  transition:
+    background-color 0.2s,
+    transform 0.15s;
 }
 
 .newsletter-submit:hover {
@@ -294,7 +296,7 @@ body > section:empty {
 .footer-social-link {
   display: flex;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
@@ -453,4 +455,77 @@ body > section:empty {
   .footer-col {
     text-align: left;
   }
+}
+
+/* =================================================
+   Dev1 Hero - Mobile Only
+   แก้เฉพาะหน้าจอมือถือ ไม่กระทบ Desktop
+================================================= */
+/* Dev1 Hero Image - Mobile full width */
+@media (max-width: 639px) {
+  .dev1-visual {
+    width: calc(100vw - 32px);
+    max-width: 500px;
+    height: 390px;
+    margin-top: 70px;
+  }
+
+  .dev1-blue-bg {
+    width: 280px;
+    height: 3600px;
+    right: 0;
+    top: 0;
+    background-color: #2176ff;
+    border-top-right-radius: 34px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .dev1-blue-slant {
+    height: 78px;
+  }
+
+  .dev1-person {
+    width: 290px;
+    right: 36px;
+    bottom: 56px;
+  }
+
+  .dev1-realtime {
+    width: 112px;
+    right: -2px;
+    top: 36px;
+  }
+
+  .dev1-users {
+    width: 125px;
+    left: 0;
+    bottom: 54px;
+  }
+
+  .dev1-chat {
+    width: 58px;
+    height: 58px;
+    left: 86px;
+    bottom: 174px;
+  }
+}
+
+<!--ชิดซ้าย ชิดขวา-- > .dev1-left-content {
+  text-align: left !important;
+}
+
+.dev1-eyebrow {
+  justify-content: flex-start !important;
+}
+
+.dev1-title {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+}
+
+.dev1-desc {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
 }

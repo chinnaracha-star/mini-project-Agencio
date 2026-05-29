@@ -4,12 +4,34 @@
   box-sizing: border-box;
 }
 
+/*-------discover-page-font---------*/
+.rubik-<uniquifier> {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+/*----declare-variable-----*/
+:root{
+  --discover-page-bg-color:#F5F8FD;
+  --discover-h1-font-color:#0B0757;
+  --discover-p-font-color:#8480AE;
+  --discover-button-color:#1375F7;
+  --discover-icon-bg-color:#FFF4D5;
+  --discover-h1-font: "Rubik";
+  --discover-p-font: "Rubik";
+}
+
+
+
+
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -124,7 +146,9 @@ body > section:empty {
   border-radius: 9999px;
   background-color: #407bff;
   cursor: pointer;
-  transition: background-color 0.2s, transform 0.15s;
+  transition:
+    background-color 0.2s,
+    transform 0.15s;
 }
 
 .newsletter-submit:hover {
@@ -295,7 +319,7 @@ body > section:empty {
 .footer-social-link {
   display: flex;
   align-items: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   justify-content: center;
   width: 2.25rem;
   height: 2.25rem;
@@ -455,3 +479,135 @@ body > section:empty {
     text-align: left;
   }
 }
+
+/* =================================================
+   Dev1 Hero - Mobile Only
+   แก้เฉพาะหน้าจอมือถือ ไม่กระทบ Desktop
+================================================= */
+/* Dev1 Hero Image - Mobile full width */
+@media (max-width: 639px) {
+  .dev1-visual {
+    width: calc(100vw - 32px);
+    max-width: 500px;
+    height: 390px;
+    margin-top: 70px;
+  }
+
+  .dev1-blue-bg {
+    width: 280px;
+    height: 3600px;
+    right: 0;
+    top: 0;
+    background-color: #2176ff;
+    border-top-right-radius: 34px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .dev1-blue-slant {
+    height: 78px;
+  }
+
+  .dev1-person {
+    width: 290px;
+    right: 36px;
+    bottom: 56px;
+  }
+
+  .dev1-realtime {
+    width: 112px;
+    right: -2px;
+    top: 36px;
+  }
+
+  .dev1-users {
+    width: 125px;
+    left: 0;
+    bottom: 54px;
+  }
+
+  .dev1-chat {
+    width: 58px;
+    height: 58px;
+    left: 86px;
+    bottom: 174px;
+  }
+}
+
+<!--ชิดซ้าย ชิดขวา-- > .dev1-left-content {
+  text-align: left !important;
+}
+
+.dev1-eyebrow {
+  justify-content: flex-start !important;
+}
+
+.dev1-title {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+}
+
+.dev1-desc {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  text-align: left !important;
+}
+
+ 
+/*-----for section 3------*/
+
+ #container-mob {
+  display: none;
+}
+
+/* ===== Responsive ===== */
+
+@media only screen and (max-width:992px) {
+
+
+  /*-----------------------for section 3--------------------------------*/
+
+  #discover-page-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+  }
+
+    
+
+  #container-com{
+    display: none;
+  }
+
+  #container-mob{
+    display: flex;
+    right: 25%;
+  }
+
+  #container-3{
+    right: 25%;
+  }
+
+  #picture-card-mob{
+    width: 70% ;
+    height: 70%;
+  }
+
+ #main-header{
+  font-size: 30px;
+ }
+
+ #main-header-blue-line{
+  width: 40px;
+  height: 5px;
+ }
+
+ #description-p1,
+ #description-p2 {
+  font-size: 15px;
+ }
+
+}
+

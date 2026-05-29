@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Agencio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
   <link rel="stylesheet" href="./style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -216,77 +218,121 @@
 
     
     <!-- Dev3 -->
-    <section class="bg-white min-h-screen flex items-center justify-center m-0 p-0 overflow-x-hidden">
-      <!-- Container-1: Outer Most Container (Expanded to Full Width) -->
-      <div
-        class="relative w-screen min-h-[600px] bg-white px-12 py-16 overflow-hidden flex flex-row items-center justify-between gap-8">
+  
+    <!-- main containter -->
+    <div id="discover-page-main-container" class="relative w-screen min-h-[600px] bg-whiteoverflow-hidden flex flex-row items-center justify-between gap-8">
+       
 
-        <!-- Light Blue Rhombus Background Shape -->
-        <!-- Positioned relative to the full viewport width -->
-        <div
-          class="absolute right-[-5%] top-[-30%] w-[55%] h-[160%] bg-blue-50/60 transform rotate-800 pointer-events-none z-0 rounded-[6rem]">
-        </div>
+           <!-- white leftmost bar -->
+          <div id="leftmost-white-bar" class="absolute top-0 left-0  w-[15vw] h-[100vh] bg-white ">
+          </div>  
+           <!-- Rotated light blue background shape -->
+          <div class="absolute top-11/12 -translate-y-1/2 w-[100vw] h-[60vh] bg-[var(--discover-page-bg-color)] skew-x-10 rotate-10 origin-right -z-10">
+          </div>
 
         <!-- Container-2: Left Inner Container (50% Width, Content Centered) -->
-        <div class="relative w-1/2 flex justify-center items-center h-[500px] z-10">
-
-          <!-- Card 1: Main Team Image (Tilted Card) -->
-          <div
-            class="absolute w-[70%] max-w-lg aspect-[4/3] bg-white p-3 rounded-2xl shadow-xl transform -rotate-6 overflow-hidden">
-            <img src="https://unsplash.com" alt="Team working on laptops" class="w-full h-full object-cover rounded-xl">
-          </div>
-
-          <!-- Card 2: Floating Stats Card (Daily Order) -->
-          <div class="absolute bottom-12 left-16 bg-white p-5 rounded-xl shadow-2xl z-20 w-44 transform -translate-x-2">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="p-1 bg-amber-100 rounded text-amber-600 text-xs font-semibold">📋 Daily Order</span>
-            </div>
-            <div class="text-3xl font-bold text-gray-800">200</div>
-            <!-- Mini Bar Chart Graphic -->
-            <div class="flex items-end gap-1 h-8 mt-2">
-              <div class="w-2 h-3 bg-amber-200 rounded-sm"></div>
-              <div class="w-2 h-5 bg-amber-200 rounded-sm"></div>
-              <div class="w-2 h-4 bg-amber-300 rounded-sm"></div>
-              <div class="w-2 h-7 bg-amber-400 rounded-sm"></div>
-            </div>
-          </div>
-
+       <div id="container-com" class="relative w-1/2 flex justify-center items-center h-[500px] z-10">
+         
+        <!-- Card 1: Main Team Image (Tilted Card) -->
+        <div class="absolute w-[40%] max-w-lg  p-3 rounded-2xl  overflow-hidden left-70">
+          <img 
+            src="./public/image/Mask Group (discover seciton).png" 
+            alt="Team working on laptops" 
+            class="w-full h-full object-cover rounded-xl"
+          >
         </div>
-
-        <!-- Container-3: Right Inner Container (50% Width, Shifted Inward) -->
-        <div class="relative w-1/2 z-10 flex flex-col justify-center text-left pl-8 pr-16">
-
-          <!-- Main Heading -->
-          <h2 class="text-5xl font-extrabold text-blue-950 tracking-tight leading-tight">
-            We Take The Work <br> Of Your Hand
-            <span class="inline-block w-12 h-1.5 bg-blue-600 align-middle ml-2 rounded"></span>
-          </h2>
-
-          <!-- Description Paragraph 1 -->
-          <p class="mt-6 text-gray-500 text-base leading-relaxed max-w-xl">
-            It's crafted with the latest trend of design & coded with all modern approaches. It's a robust &
-            multi-dimensional usable. Nostrum placeat hic, praesent atque ornare minim.
-          </p>
-          <!--อาจจะเพิ่ม div ขั้น-->
-          <!-- Description Paragraph 2 -->
-          <p class="mt-4 text-gray-400 text-sm leading-relaxed max-w-xl">
-            nihil suscipit aliquet excepteur bibendum cumque facilis senectus habitant aliquid cupidatati! Fugit? Nisl
-            dignissimos ratione.
-          </p>
-
-          <!-- Action Button -->
-          <div class="mt-8">
-            <button
-              class="bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm px-8 py-3 rounded-md transition-colors duration-200 shadow-md shadow-blue-600/20 cursor-pointer">
-              Discover More
-            </button>
+  
+        <!-- Card 2: Floating Stats Card (Daily Order) -->
+        <div class="absolute top-60 left-50 bg-white p-5 rounded-xl shadow-2xl z-20 w-40 h-40 transform -translate-x-2">
+          <div class="flex items-center gap-2 mb-1">
+          <div class="bg-[var(--discover-icon-bg-color)] border-[var(--discover-icon-bg-color)] border-4 rounded w-5">
+            <img 
+            src="./public/icon/bag icon (dicover section).png" 
+            alt="Team working on laptops" 
+            class="w-full h-full object-cover rounded-xl"
+            >
           </div>
-
+            <span class="p-1 text-[var(--discover-p-font-color)] text-xs font-[var(--discover-p-font)]">Daily Order</span>
+          </div>
+          <div class="text-3xl font-[var(--discover-p-font)] font-bold text-gray-800">200</div>
+          <!-- Mini Bar Chart Graphic -->
+          <div class="flex items-end gap-1 h-8 mt-2">
+            <div class="w-2 h-7 bg-amber-200 rounded-sm -mb-6"></div>
+            <div class="w-2 h-4 bg-amber-200 rounded-sm -mb-3"></div>
+            <div class="w-2 h-4 bg-amber-300 rounded-sm"></div>
+            <div class="w-2 h-7 bg-amber-400 rounded-sm"></div>
+          </div>
         </div>
-
+  
       </div>
 
-    </section>
+      <!-- Container-3: Right Inner Container (50% Width, Shifted Inward) -->
+       <div class="absolute right-0 bottom-5 w-1/2 z-10 flex flex-col justify-center text-left pl-8 pr-16">
+         
+        <!-- Main Heading -->
+        <h2 id="main-header" class="text-5xl font-[var(--discover-p-font)] font-bold text-blue-950 tracking-tight leading-tight">
+          We Take The Work <br> Of Your Hand 
+          <span id="main-header-blue-line" class="inline-block w-15 h-1.5  bg-[var(--discover-button-color)] align-baseline ml-2 rounded"></span>
+        </h2>
+  
+        <!-- Description Paragraph 1 -->
+        <p id="description-p1" class="mt-6 text-gray-500 text-base leading-relaxed max-w-xl font-[var(--discover-p-font)]">
+          It's crafted with the latest trend of design & coded with all modern approaches. It's a robust & multi-dimensional usable. Nostrum placeat hic, praesent atque ornare minim.
+        </p>
+        <!--อาจจะเพิ่ม div ขั้น-->
+        <!-- Description Paragraph 2 -->
+        <p id="description-p2" class="mt-6 text-gray-500 text-base leading-relaxed max-w-xl font-[var(--discover-p-font)]">
+          nihil suscipit aliquet excepteur bibendum cumque facilis senectus habitant aliquid cupidatati! Fugit? Nisl dignissimos ratione.
+        </p>
+  
+        <!-- Action Button -->
+        <div class="mt-8">
+          <button class="bg-[var(--discover-button-color)] hover:bg-blue-700 text-white font-[var(--discover-p-font)] font-medium text-sm px-8 py-3 rounded-md transition-colors duration-200 shadow-md shadow-blue-600/20 cursor-pointer">
+            Discover More
+          </button>
+        </div>
+  
+      </div>
+  
+    </div>
+
+    <!-- Container-2(hidden): Left Inner Container (50% Width, Content Centered) -->
+    <div id="container-mob" class="relative w-1/2 flex justify-center items-center h-[500px] z-10">
+         
+      <!-- Card 1: Main Team Image (Tilted Card) -->
+      <div id="picture-card-mob" class="absolute w-[40%] max-w-lg  p-3 rounded-2xl  overflow-hidden left-70">
+        <img 
+          src="./public/image/Mask Group (discover seciton).png" 
+          alt="Team working on laptops" 
+          class="w-full h-full object-cover rounded-xl"
+        >
+      </div>
+    
+      <!-- Card 2: Floating Stats Card (Daily Order) -->
+      <div id="stat-card-mob" class="absolute top-60 left-50 bg-white p-5 rounded-xl shadow-2xl z-20 w-40 h-40 transform -translate-x-2">
+        <div class="flex items-center gap-2 mb-1">
+        <div class="bg-[var(--discover-icon-bg-color)] border-[var(--discover-icon-bg-color)] border-4 rounded w-5">
+          <img 
+          src="./public/icon/bag icon (dicover section).png" 
+          alt="Team working on laptops" 
+          class="w-full h-full object-cover rounded-xl"
+          >
+        </div>
+          <span class="p-1 text-[var(--discover-p-font-color)] text-xs font-[var(--discover-p-font)]">Daily Order</span>
+        </div>
+        <div class="text-3xl font-[var(--discover-p-font)] font-bold text-gray-800">200</div>
+        <!-- Mini Bar Chart Graphic -->
+        <div class="flex items-end gap-1 h-8 mt-2">
+          <div class="w-2 h-7 bg-amber-200 rounded-sm -mb-6"></div>
+          <div class="w-2 h-4 bg-amber-200 rounded-sm -mb-3"></div>
+          <div class="w-2 h-4 bg-amber-300 rounded-sm"></div>
+          <div class="w-2 h-7 bg-amber-400 rounded-sm"></div>
+        </div>
+      </div>
+
+    </div>
+
+
 
 
 
@@ -295,7 +341,7 @@
     <!-- Dev 4 -->
 
     <!-- price-plan section -->
-    <section class="flex flex-col items-center justify-center w-full py-16 px-4">
+    <section class="flex flex-col items-center justify-center w-full py-16 px-4"> 
       <header class="text-center mb-14 lg:space-y-6">
         <p class="text-md lg:text-[24px] text-[#8480AE] font-[400]">Price Plan</p>
         <p class="text-2xl lg:text-[48px] text-[#0B0757] font-[500]">No Extra Charges!</p>
@@ -307,7 +353,7 @@
           <tr role="row">
             <th scope="col" class="w-4/12 lg:w-1/4">
             </th>
-
+            
             <th scope="col" class="w-1/4 border-l text-center px-2 py-3 lg:py-10">
               <span class="text-sm lg:text-[36px] font-[500] text-[#FDC46E]">$2000</span>
               <span class="block text-xs lg:text-[20px] mt-1 font-[400] text-[#8480AE]">Regular</span>
@@ -326,8 +372,7 @@
         <tbody>
 
           <tr role="row" class="border-t">
-            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Full
-              Access</th>
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Full Access</th>
 
             <td class="border-l border-gray-200 text-center" aria-label="Not included in Regular">
               <span class="text-lg text-[#8480AE] font-bold">✕</span>
@@ -341,8 +386,7 @@
           </tr>
 
           <tr role="row" class="border-t">
-            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">
-              Multiple User</th>
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Multiple User</th>
 
             <td class="border-l border-gray-200 text-center" aria-label="Not included in Regular">
               <span class="text-lg text-[#8480AE] font-bold">✕</span>
@@ -356,8 +400,7 @@
           </tr>
 
           <tr role="row" class="border-t">
-            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Refund
-            </th>
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">Refund</th>
 
             <td class="border-l border-gray-200 text-center" aria-label="Not included in Regular">
               <span class="text-lg text-[#8480AE] font-bold">✕</span>
@@ -371,8 +414,7 @@
           </tr>
 
           <tr role="row" class="border-t">
-            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">24/7
-              Support</th>
+            <th scope="row" class="text-sm lg:text-[20px] text-[#8480AE] font-[400] text-left px-2 lg:px-5 py-6">24/7 Support</th>
 
             <td class="border-l border-gray-200 text-center" aria-label="Included in Corporate">
               <span class="text-[#1374F6] text-lg font-bold">✓</span>
@@ -390,24 +432,21 @@
             <td></td>
 
             <td class="border-l text-center px-2 py-6">
-              <button type="button"
-                class="bg-[#FDC46E] hover:bg-amber-500 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
+              <button type="button" class="bg-[#FDC46E] hover:bg-amber-500 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
                 Choose Plan
               </button>
               <p class="text-[10px] lg:text-[14px] text-[#8480AE] mt-4">Get your 30 days free trial</p>
             </td>
 
             <td class="border-l text-center px-2 py-6">
-              <button type="button"
-                class="bg-[#00B894] hover:bg-emerald-600 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
+              <button type="button" class="bg-[#00B894] hover:bg-emerald-600 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
                 Choose Plan
               </button>
               <p class="text-[10px] lg:text-[14px] text-[#8480AE] mt-4">Get your 30 days free trial</p>
             </td>
 
             <td class="border-l text-center px-2 py-6">
-              <button type="button"
-                class="bg-[#1374F6] hover:bg-sky-500 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
+              <button type="button" class="bg-[#1374F6] hover:bg-sky-500 text-white text-xs font-[500] rounded-md w-17 h-10 lg:w-[124px] lg:h-[48px]">
                 Choose Plan
               </button>
               <p class="text-[10px] lg:text-[14px] text-[#8480AE] mt-4">Get your 30 days free trial</p>
@@ -417,22 +456,22 @@
     </section>
 
     <!-- quote section -->
-    <section class="flex flex-col items-center justify-center w-full py-40 lg:flex-row lg:gap-[90px]"> 
-      <div class="ceo-image relative w-[349px] h-[481px]">
+    <section class="flex items-center justify-center gap-30 w-[70vw] h-[80vh]"> 
+      <div class="ceo-image w-[400px] h-[500px]">
         <img src="./public/image/CEO-pic.png" alt="CEO of DIANO" class="absolute">
-        <img src="./public/image/thump-up.png" alt="thump-up" class="absolute size-[76px] top-[285px] left-[-25px] lg:left-[-38px]">
+        <img src="./public/image/thump-up.png" alt="thump-up" class="size-[76px] relative top-71 right-[38px]">
       </div>
 
       <article class="w-[602px] flex flex-col gap-10">
+        <img src="./public/image/quote.png" alt="quote-sign" class="size-[59px]">
 
-        <div class="w-[343px] lg:w-full text-[16px] space-y-5 lg:space-y-10 lg:text-[24px] text-[#8480AE] italic mx-auto lg:m-0">
-          <img src="./public/image/quote.png" alt="quote-sign" class="size-[44px] lg:size-[59px]">
+        <div class="text-[24px] text-[#8480AE] italic">
           <p>It’s awesome service. Land from day very fill that midst stars one dominion. Itself was let that divided itself god don't subdue wherein let behold over he whose of sea moved called.</p>
         </div>
 
         <div>
-          <p class="text-[20px] lg:text-[24px] text-[#FDC46E] font-[700] text-center lg:text-left">Jack Smith</p>
-          <p class="text-[16px] text-[#8480AE] text-center lg:text-left">CEO of DIANO</p>
+          <p class="text-[24px] text-[#FDC46E] font-[700]">Jack Smith</p>
+          <p class="text-[16px] text-[#8480AE]">CEO of DIANO</p>
         </div>
       </article>
     </section>
@@ -453,7 +492,13 @@
         <form class="newsletter-form" action="#" method="post" aria-label="Newsletter signup">
           <label for="newsletter-email" class="sr-only">Email address</label>
           <div class="newsletter-input-wrap">
-            <input id="newsletter-email" type="email" name="email" placeholder="Enter your email address" required />
+            <input
+              id="newsletter-email"
+              type="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
             <button type="submit" class="newsletter-submit" aria-label="Subscribe">
               <img src="./public/icon/Vector.png" alt="" class="newsletter-submit-icon" />
             </button>
